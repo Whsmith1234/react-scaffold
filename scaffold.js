@@ -24,7 +24,7 @@ function Header(props) {
     <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Posts</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <ul id="nav-mobile" class="right">
       <li><a href="#" onClick={(e)=>{
           e.preventDefault();
           route("new")
