@@ -1,5 +1,5 @@
 {
-  "name": "react-scaffold",
+  "name": "react-scaffold-firebase",
   "version": "1.0.0",
   "description": "scaffold react and firebase CRUD apps",
   "bin": {
