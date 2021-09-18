@@ -189,12 +189,7 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, on
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAsmHY1tscqkdUceWcC83KvljlJf2gdmQQ",
-  authDomain: "scaffold-8e317.firebaseapp.com",
-  projectId: "scaffold-8e317",
-  storageBucket: "scaffold-8e317.appspot.com",
-  messagingSenderId: "1018178117914",
-  appId: "1:1018178117914:web:da735b098f8e649d7dcca3"
+  //PUT YOUR FIREBASE CONFIG HERE
 };
 
 initializeApp(firebaseConfig);
