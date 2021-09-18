@@ -12,7 +12,7 @@ var Post = "./" + args[2] + "/src/Post.js";
 var Header = "./" + args[2] + "/src/Header.js";
 var SignIn = "./" + args[2] + "/src/signIn.js";
 shell.exec("npx create-react-app " + args[2] + " --template cra-template-pwa");
-console.log(details);
+
 var header = `
 import React from 'react';
 import './App.css';
@@ -45,7 +45,7 @@ function Header(props) {
 }
 
 export default Header;`;
-console.log(header);
+
 var newPost = ` 
 import './App.css';
 import {route} from'./index';
@@ -119,9 +119,7 @@ function post(post){
     set(reference,post);
 }`
 posts += "/>";
-console.log(post);
-console.log(posts);
-console.log(newPost);
+
 
 //var data = fs.writeFileSync(mainPage, mainCode); 
 mainPageCode = `
@@ -342,3 +340,7 @@ fs.writeFileSync(Header, header);
 fs.writeFileSync(mainPage, mainPageCode);
 fs.writeFileSync(NewPost, newPost);
 fs.writeFileSync("./" + args[2] + "/public/index.html", indexHTML);
+
+console.log("Process complete...");
+console.log("cd into "+args[2]);
+console.log("Then run npm install firebase");
